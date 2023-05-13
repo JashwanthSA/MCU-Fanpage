@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signup page</title>
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ddd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+
+  background-image: url(images/marvel-mcu.gif);
+
+  min-height: 380px;
+
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.center-form{
+
+justify-content: center;
+
+display: flex;
+
+margin: 40px 50px;
+
+border: 3px solid blue;
+
+padding: 30px;
+
+background-color: rgb(208, 205, 248);
+}
+
+
+input[type=text], input[type=password],input[type=date] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  opacity: .5;
+}
+
+input[type=text]:focus, input[type=password]:focus ,input[type=date]:focus{
+  background-color: #ddd;
+  outline: none;
+  opacity: 1;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-img">
+  <form action="home page.html" class="container">
+    <h1 align="center">Signup</h1>
+
+    <label><b>First name</b></label>
+    <input type="text" placeholder="Enter First Name" name="name" required>
+
+    <label><b>Last name</b></label>
+    <input type="text" placeholder="Enter Last Name" name="name">
+
+    <label><b>Date of birth</b></label>
+    <input type="date" name="dob" required>
+
+    <label><b>Country</b></label>
+    <input type="text" placeholder="Enter Country name" name="country" required>
+
+    <label><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Signup</button>
+    
+  </form>
+  <h3>Already have an account? Then <a href="login.html">click here to login.</a> </h3>
+</div>
+
+</body>
+</html>
